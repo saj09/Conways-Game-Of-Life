@@ -3,8 +3,8 @@ package sample;
 public class Grid {
     int Rows;
     int Cols;
-    Cell[][] cells;
-    Cell[] AliveCells;
+   public Cell[][] cells;
+    public Cell[] AliveCells;
     int ZoomLevel;
     int Counter;
 
@@ -13,7 +13,7 @@ public class Grid {
 
     }
 
-    Grid( int Rows,int Cols,Cell[][] cells,Cell[] AliveCells,int ZoomLevel,int Counter)
+    Grid( int Rows,int Cols,Cell [][] cells,Cell[] AliveCells,int ZoomLevel,int Counter)
     {
         this.Rows=Rows;
         this.Cols=Cols;
