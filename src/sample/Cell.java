@@ -31,12 +31,12 @@ public class Cell {
 
     }
 
-   boolean IsNeighbour(Cell cell)
+   boolean IsNeighbour(Cell [] cell)
    {
        return true;
    }
 
-    boolean IsSameCell(Cell cell)
+    boolean IsSameCell(Cell [] cell)
     {
         return true;
     }
