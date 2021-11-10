@@ -3,27 +3,36 @@ package sample;
 public class State {
     Grid grid;
 
-    State()
-    {
-
-    }
-    State(Grid grid)
-    {
-        //this.grid= new Grid(grid.Rows, grid.Cols,grid.cells, grid.AliveCells, grid.ZoomLevel, grid.Counter);
-    }
-
-    void SaveStates()
+    public State()
     {
 
     }
 
-    void DeleteAllStates()
+    public State(Grid grid) {
+        this.grid = grid;
+    }
+
+
+    public  void SaveStates()
     {
 
     }
 
-    void DeleteSpecificState(int ID)
+    public void DeleteAllStates()
     {
 
+    }
+
+    public void DeleteSpecificState(int ID)
+    {
+
+    }
+
+    public Grid getGrid() {
+        return grid;
+    }
+
+    public void setGrid(Grid grid) {
+        this.grid = grid;
     }
 }

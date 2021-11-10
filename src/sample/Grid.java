@@ -8,12 +8,12 @@ public class Grid {
     int ZoomLevel;
     int Counter;
 
-    Grid()
+    public Grid()
     {
 
     }
 
-    Grid( int Rows,int Cols,Cell [][] cells,Cell[] AliveCells,int ZoomLevel,int Counter)
+    public Grid( int Rows,int Cols,Cell [][] cells,Cell[] AliveCells,int ZoomLevel,int Counter)
     {
         this.Rows=Rows;
         this.Cols=Cols;
@@ -23,29 +23,60 @@ public class Grid {
         AliveCells[Rows]=new Cell();
     }
 
-    Cell[][] GetAllCells()
+    public  Cell[][] GetAllCells()
     {
         return cells;
     }
 
-    Cell[] GetActiveCells()
+    public Cell[] GetActiveCells()
     {
         return AliveCells;
     }
 
-    int GetZoom()
+    public int GetZoom()
     {
         return ZoomLevel;
     }
 
-    void SetZoom(int Zoom)
+    public void SetZoom(int Zoom)
     {
         this.ZoomLevel=Zoom;
     }
 
-    void EvolveCell(Cell[] cell)
+    public  void EvolveCell(Cell[] cell)
     {
 
     }
 
+    public int getRows() {
+        return Rows;
+    }
+
+    public void setRows(int rows) {
+        Rows = rows;
+    }
+
+    public int getCols() {
+        return Cols;
+    }
+
+    public void setCols(int cols) {
+        Cols = cols;
+    }
+
+    public int getZoomLevel() {
+        return ZoomLevel;
+    }
+
+    public void setZoomLevel(int zoomLevel) {
+        ZoomLevel = zoomLevel;
+    }
+
+    public int getCounter() {
+        return Counter;
+    }
+
+    public void setCounter(int counter) {
+        Counter = counter;
+    }
 }
