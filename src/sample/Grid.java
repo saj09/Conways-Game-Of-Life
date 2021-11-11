@@ -3,8 +3,8 @@ package sample;
 public class Grid {
     int Rows;
     int Cols;
-   public Cell[][] cells;
-    public Cell[] AliveCells;
+    Cell[][] cells;
+    Cell[] AliveCells;
     int ZoomLevel;
     int Counter;
 
